@@ -5,9 +5,9 @@ import {
   Route,
   Redirect
 } from 'react-router-dom';
-import userService from '../../utils/userService';
 import WelcomePage from '../WelcomePage/WelcomePage';
 import SignupPage from '../SignupPage/SignupPage';
+import userService from '../../utils/userService';
 
 
 class App extends Component {
@@ -16,8 +16,21 @@ class App extends Component {
   }
 
   /*---------- Helper Methods ----------*/
+
+
   /*---------- Callback Methods ----------*/
+
+  handleSignup = () => {
+    this.setState({user: userService.getUser()});
+  }
+
   /*---------- Lifecycle Methods ----------*/
+
+  componentDidMount() {
+    let user = userService.getUser();
+    this.setState({user});
+  }
+
 
   render() {
     return (
@@ -29,7 +42,9 @@ class App extends Component {
               <WelcomePage />
             }/>
             <Route exact path='/signup' render={() =>
-              <SignupPage />
+              <SignupPage 
+                handleSignup={this.handleSignup}
+              />
             }/>
 
 

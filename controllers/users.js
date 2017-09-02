@@ -15,12 +15,12 @@ function signup(req, res) {
 
 function createJWT(user) {
   return jwt.sign(
-    {user}, 
+    {user},
     SECRET,
     {expiresIn: '24h'}
   );
 }
 
 module.exports = {
-
+  signup
 }
