@@ -12,5 +12,5 @@ function getUser() {
 
 export default {
   signup,
-  
+  getUser
 }
