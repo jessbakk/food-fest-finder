@@ -7,7 +7,7 @@ function signup(user) {
     body: JSON.stringify(user)
   })
   .then(res => {
-    if (res.ok) return resizeBy.json();
+    if (res.ok) return res.json();
     throw new Error('Email already taken!');
   })
   .then(({token}) => token);
