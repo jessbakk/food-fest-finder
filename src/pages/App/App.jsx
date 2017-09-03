@@ -22,6 +22,15 @@ class App extends Component {
 
   /*---------- Callback Methods ----------*/
 
+  handleLogin = () => {
+    this.setState({user: userService.getUser()});
+  }
+
+  handleLogout = () => {
+    userService.logout();
+    this.setState({user: null});
+  }
+
   handleSignup = () => {
     this.setState({user: userService.getUser()});
   }
@@ -41,7 +50,10 @@ class App extends Component {
         <Router>
           <Switch>
             <Route exact path='/' render={ () =>
-              <WelcomePage />
+              <WelcomePage 
+                user={this.setState.user}
+                handleLogout={this.handleLogout}
+              />
             }/>
             <Route exact path='/signup' render={(props) =>
               <SignupPage 
