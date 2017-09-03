@@ -16,6 +16,7 @@ class SignupForm extends Component {
   handleChange = (field, e) => {
     this.props.updateMessage('');
     this.setState({
+      // Using ES2015 Computed Property Names
       [field]: e.target.value
     });
   }
@@ -23,10 +24,18 @@ class SignupForm extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     userService.signup(this.state)
+      // successfully signed up - show GamePage
       .then(() => {
+        //inform <App> that a user has signed up!
         this.props.handleSignup();
+        console.log('im in the handle submit on the sugnupform.jsx')
+        console.log(this.props.history)
+        console.log(this.props)
+        console.log(this.history)
+        console.log(this.state)
         this.props.history.push('/');
       })
+      // invalid user data
       .catch(err => this.props.updateMessage(err.message));
   }
 
@@ -37,31 +46,31 @@ class SignupForm extends Component {
   render() {
     return (
       <div>
-        <header>Sign Up</header>
-        <form onSubmit={this.handleSubmit} >
-          <div>
-            <div>
-              <input type="text" placeholder="Name" value={this.state.name} onChange={(e) => this.handleChange('name', e)} />
+        <header className="header-footer">Sign Up</header>
+        <form className="form-horizontal" onSubmit={this.handleSubmit} >
+          <div className="form-group">
+            <div className="col-sm-12">
+              <input type="text" className="form-control" placeholder="Name" value={this.state.name} onChange={(e) => this.handleChange('name', e)} />
             </div>
           </div>
-          <div>
-            <div>
-              <input type="email"placeholder="Email" value={this.state.email} onChange={(e) => this.handleChange('email', e)} />
+          <div className="form-group">
+            <div className="col-sm-12">
+              <input type="email" className="form-control" placeholder="Email" value={this.state.email} onChange={(e) => this.handleChange('email', e)} />
             </div>
           </div>
-          <div>
-            <div>
-              <input type="password" placeholder="Password" value={this.state.password} onChange={(e) => this.handleChange('password', e)} />
+          <div className="form-group">
+            <div className="col-sm-12">
+              <input type="password" className="form-control" placeholder="Password" value={this.state.password} onChange={(e) => this.handleChange('password', e)} />
             </div>
           </div>
-          <div>
-            <div>
-              <input type="password" placeholder="Confirm Password" value={this.state.passwordConf} onChange={(e) => this.handleChange('passwordConf', e)} />
+          <div className="form-group">
+            <div className="col-sm-12">
+              <input type="password" className="form-control" placeholder="Confirm Password" value={this.state.passwordConf} onChange={(e) => this.handleChange('passwordConf', e)} />
             </div>
           </div>
-          <div>
-            <div>
-              <button disabled={this.isFormInvalid()}>Sign Up</button>&nbsp;&nbsp;
+          <div className="form-group">
+            <div className="col-sm-12 text-center">
+              <button className="btn btn-default" disabled={this.isFormInvalid()}>Sign Up</button>&nbsp;&nbsp;
               <Link to='/'>Cancel</Link>
             </div>
           </div>
