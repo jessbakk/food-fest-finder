@@ -24,9 +24,7 @@ class SignupForm extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     userService.signup(this.state)
-      // successfully signed up - show GamePage
       .then(() => {
-        //inform <App> that a user has signed up!
         this.props.handleSignup();
         console.log('im in the handle submit on the sugnupform.jsx')
         console.log(this.props.history)
@@ -35,7 +33,6 @@ class SignupForm extends Component {
         console.log(this.state)
         this.props.history.push('/');
       })
-      // invalid user data
       .catch(err => this.props.updateMessage(err.message));
   }
 
