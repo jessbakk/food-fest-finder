@@ -18,6 +18,10 @@ function getToken() {
   return token;
 }
 
+function removeToken() {
+  localStorage.removeItem('token');
+}
+
 function getUserFromToken () {
   var token = getToken();
   return token ? JSON.parse(atob(token.split('.')[1])).user : null;
@@ -26,5 +30,6 @@ function getUserFromToken () {
 export default {
   setToken,
   getToken,
+  removeToken,
   getUserFromToken
 };

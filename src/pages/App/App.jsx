@@ -51,7 +51,7 @@ class App extends Component {
           <Switch>
             <Route exact path='/' render={ () =>
               <WelcomePage 
-                user={this.setState.user}
+                user={this.state.user}
                 handleLogout={this.handleLogout}
               />
             }/>
