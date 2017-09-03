@@ -1,12 +1,14 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
+import NavBar from '../../components/NavBar/NavBar';
 
-const WelcomePage = () => {
-  return(
-    <div>
-      <h1>WelcomePage</h1>
-    </div>
-  )
+const WelcomePage = (props) => {
+return (  
+  <div>
+    <NavBar user={props.user} handleLogout={props.handleLogout}/>
+    <h1>Welcome Page</h1>
+  </div>
+  );
 }
 
 export default WelcomePage;

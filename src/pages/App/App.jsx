@@ -2,17 +2,19 @@ import React, { Component } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Redirect
+  Route
+  // Redirect
 } from 'react-router-dom';
 import WelcomePage from '../WelcomePage/WelcomePage';
 import SignupPage from '../SignupPage/SignupPage';
+import LoginPage from '../LoginPage/LoginPage';
 import userService from '../../utils/userService';
 
 
 class App extends Component {
   constructor(props) {
     super(props);
+    this.state = Object.assign({})
   }
 
   /*---------- Helper Methods ----------*/
@@ -41,13 +43,18 @@ class App extends Component {
             <Route exact path='/' render={ () =>
               <WelcomePage />
             }/>
-            <Route exact path='/signup' render={() =>
+            <Route exact path='/signup' render={(props) =>
               <SignupPage 
+                {...props}
                 handleSignup={this.handleSignup}
               />
             }/>
-
-
+            <Route exact path='/login' render={(props) => 
+              <LoginPage
+                {...props}
+                handleLogin={this.handleLogin}
+              />
+            }/>
           </Switch>
         </Router>
         
