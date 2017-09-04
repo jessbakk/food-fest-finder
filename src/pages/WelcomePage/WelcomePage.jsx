@@ -1,6 +1,7 @@
 import React from 'react';
 // import {Link} from 'react-router-dom';
 import NavBar from '../../components/NavBar/NavBar';
+import Jumbotron from '../../components/Jumbotron/Jumbotron';
 
 const WelcomePage = (props) => {
 return (  
@@ -9,7 +10,7 @@ return (
     user={props.user} 
     handleLogout={props.handleLogout}
     />
-    <h1>Welcome Page</h1>
+    <Jumbotron />
   </div>
   );
 }

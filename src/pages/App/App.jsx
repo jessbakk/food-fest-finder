@@ -46,7 +46,6 @@ class App extends Component {
   render() {
     return (
       <div>
-        <header> FOODFEST FINDER </header>
         <Router>
           <Switch>
             <Route exact path='/' render={ () =>
