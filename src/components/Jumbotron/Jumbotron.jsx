@@ -4,10 +4,11 @@ import './Jumbotron.css';
 const Jumbotron = () => {
   return(
     <div className="container">
-      <div className="jumbotron">
+      <div className="jumbotron jumbotron-img">
         <h1>FoodFestFinder</h1>
+        <div>
         <p>Find the best Food Fests in your area</p>
-        <img src="https://i.imgur.com/LTb6vhk.png" alt=""/>
+        </div>
       </div>
     </div>
   )
