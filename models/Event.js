@@ -4,12 +4,17 @@ var Schema = mongoose.Schema;
 const eventSchema = new Schema ({
   name: String,
   description: String,
-  date: String,
+  month: String,
+  day: String,
+  year: String,
+  dayOfWeek: String,
   time: String,
   location: String,
   city: String,
-  cost: Number,
+  cost: String,
   website: String
+}, {
+  timestamps: true
 })
 
 
