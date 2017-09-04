@@ -10,7 +10,7 @@ const NavBar = (props) => {
         &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
         <Link to="" onClick={props.handleLogout} >LOG OUT</Link>
         &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-        <span className="NavBar-welcome">WELCOME, {props.user.name}</span>
+        <span className="NavBar-welcome">Welcome, {props.user.name}</span>
       </nav>
     </div>
     :
