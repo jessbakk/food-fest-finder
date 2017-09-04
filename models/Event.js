@@ -5,14 +5,15 @@ const eventSchema = new Schema ({
   name: String,
   description: String,
   month: String,
-  day: String,
+  day: [String],
   year: String,
-  dayOfWeek: String,
+  dayOfWeek: [String],
   time: String,
   location: String,
   city: String,
   cost: String,
-  website: String
+  website: String,
+  photos: [String]
 }, {
   timestamps: true
 })
