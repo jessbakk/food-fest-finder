@@ -1,10 +1,17 @@
 import React from 'react';
+import NavBar from '../../components/NavBar/NavBar';
+import EventsData from '../../components/EventsData/EventsData';
 
 
-const EventsPage = () => {
+const EventsPage = (props) => {
   return (
   <div>
-    <h1>EventsPage is here</h1>
+    <NavBar 
+      user={props.user} 
+      handleLogout={props.handleLogout}
+    />
+    <h1>Food Festivals</h1>
+    <EventsData />
   </div>
   );
 };

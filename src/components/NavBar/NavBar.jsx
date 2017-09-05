@@ -15,7 +15,7 @@ const NavBar = (props) => {
     </div>
     :
     <div>
-      <nav className="navbar navbar-inverse fixed-top">
+      <nav className="navbar-right fixed-top">
         <Link to="/login">LOG IN</Link>
         &nbsp;&nbsp;|&nbsp;&nbsp;
         <Link to="/signup">SIGN UP</Link>
