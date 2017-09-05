@@ -9,6 +9,7 @@ import WelcomePage from '../WelcomePage/WelcomePage';
 import SignupPage from '../SignupPage/SignupPage';
 import LoginPage from '../LoginPage/LoginPage';
 import userService from '../../utils/userService';
+import EventsPage from '../EventsPage/EventsPage';
 
 
 class App extends Component {
@@ -65,6 +66,8 @@ class App extends Component {
                 {...props}
                 handleLogin={this.handleLogin}
               />
+            }/>
+            <Route exact path='/events' render={() => <EventsPage />
             }/>
           </Switch>
         </Router>
