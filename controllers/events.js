@@ -1,7 +1,11 @@
-function index(req, res) {
-  console.log("made it to the events controller");
+var Event = require('./../models/event');
+
+function getAll() {
+  Event.find({}, (err, users) =>{
+    res.status(200).json(events)
+  });
 }
 
 module.exports = {
-  index
+  getAll
 }

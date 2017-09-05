@@ -16,6 +16,13 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = Object.assign({})
+    this.getInitialState()
+  }
+
+  getInitialState() {
+    return {
+      events: []
+    }
   }
 
   /*---------- Helper Methods ----------*/
@@ -35,6 +42,8 @@ class App extends Component {
   handleSignup = () => {
     this.setState({user: userService.getUser()});
   }
+
+
 
   /*---------- Lifecycle Methods ----------*/
 
@@ -67,7 +76,10 @@ class App extends Component {
                 handleLogin={this.handleLogin}
               />
             }/>
-            <Route exact path='/events' render={() => <EventsPage />
+            <Route exact path='/events' render={() => 
+            <EventsPage 
+              user={this.state.user}
+            />
             }/>
           </Switch>
         </Router>

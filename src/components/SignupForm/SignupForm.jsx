@@ -26,11 +26,6 @@ class SignupForm extends Component {
     userService.signup(this.state)
       .then(() => {
         this.props.handleSignup();
-        console.log('im in the handle submit on the sugnupform.jsx')
-        console.log(this.props.history)
-        console.log(this.props)
-        console.log(this.history)
-        console.log(this.state)
         this.props.history.push('/');
       })
       .catch(err => this.props.updateMessage(err.message));
