@@ -19,6 +19,7 @@ app.use(bodyParser.json());
 // Put API Routes here, before the "catch all" route 
 
 app.use('/api/users', require('./routes/api/users'));
+app.use('/api/events', require('./routes/api/events'));
 
 // catch-all routes necessary for SPA client-side routing
 app.get('/*', function(req, res) {
