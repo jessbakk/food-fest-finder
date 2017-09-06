@@ -14,9 +14,13 @@ import EventsData from '../../components/EventsData/EventsData';
       />
       <div className="container">
         <div className="row">
-          <h1>Food Festivals</h1>
-          <Link to="/addevent"><span className="border">Add Event</span></Link>
-          <EventsData />
+          <div className="col-xs-9">
+            <h1>Food Festivals</h1>
+            <EventsData />
+          </div>
+          <div className="col-md-8">
+            map data
+          </div>
         </div>
       </div>
     </div>
