@@ -7,7 +7,7 @@ const Event = (props) => {
       <p>{props.event.name}</p>
       <p>{props.event.description}</p>
       <p>{props.event.photos[0]}</p>
-      <img src={props.event.photos[0]} />
+      <img src={props.event.photos[0]} alt="" />
     </div>
   )
 
