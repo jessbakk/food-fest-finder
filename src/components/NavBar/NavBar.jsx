@@ -4,30 +4,33 @@ import './NavBar.css';
 
 const NavBar = (props) => {
   let nav = props.user ?
-    <div>
-      <nav className="navbar-right fixed-top">
-        <Link to="/events">EVENTS</Link>
-        &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-        <Link to="/" >HOME</Link>
-        &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-        <Link to="" onClick={props.handleLogout} >LOG OUT</Link>
-        &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-        <span className="NavBar-welcome">Welcome, {props.user.name}</span>
+    <div className="row">
+      <nav className="navbar navbar-dark bg-dark navbar-fixed-top navbar-inverse">
+        <div className="align-left col-md-3 text-center">
+          <Link to="/">FoodFestFinder</Link>
+        </div>
+        <div className="align-right col-md-8 text-right">
+          <Link to="/events"><span>EVENTS</span></Link>
+          &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+          <Link to="/" >HOME</Link>
+          &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+          <Link to="" onClick={props.handleLogout} >LOG OUT</Link>
+          &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+          <span className="NavBar-welcome">Welcome, {props.user.name}</span>
+        </div>
       </nav>
     </div>
     :
-    <div>
-      <nav className="navbar-right fixed-top">
+      <nav className="navbar navbar-dark bg-dark navbar-fixed-top navbar-inverse">
         <Link to="/events">EVENTS</Link>
         &nbsp;&nbsp;|&nbsp;&nbsp;
         <Link to="/login">LOG IN</Link>
         &nbsp;&nbsp;|&nbsp;&nbsp;
         <Link to="/signup">SIGN UP</Link>
-      </nav>
-    </div>;
+      </nav>;
 
   return (
-    <div className="container nav-custom">
+    <div className="nav-custom">
       {nav}
     </div>
   );

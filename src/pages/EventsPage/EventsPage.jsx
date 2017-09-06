@@ -12,9 +12,12 @@ import EventsData from '../../components/EventsData/EventsData';
       user={props.user} 
       handleLogout={props.handleLogout}
       />
-      <Link to='/'>Back</Link>
-      <h1>Food Festivals</h1>
-      <EventsData />
+      <div className="container">
+        <div className="row">
+          <h1>Food Festivals</h1>
+          <EventsData />
+        </div>
+      </div>
     </div>
   );
 }
