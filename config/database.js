@@ -8,3 +8,5 @@ var db = mongoose.connection;
 db.once('open', () => {
   console.log(`Connected to MongoDB ${db.host}:${db.port}`);
 });
+
+module.exports = mongoose;
