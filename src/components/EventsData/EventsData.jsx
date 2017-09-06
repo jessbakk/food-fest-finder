@@ -41,7 +41,6 @@ class EventsData extends Component {
     
     return (
       <div className="container">
-        <div>Events</div>
          {eventList} 
       </div>
     );
