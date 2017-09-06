@@ -1,21 +1,54 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
+import Event from '../Event/Event';
 
 class EventsData extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+    this.state={
+    }
+  };
+  
+  componentDidMount = () => {
+    this.fetchEvents();
   }
 
-render() {
+  fetchEvents = () => {
+    console.log('fetching data EventsData.jsx');
+      return fetch('/api/events/', {
+        method: 'GET'
+      })
+      .then(res => res.json())
+      .then(events => {
+        console.log('got events from backend')
+        this.setState({events})
+     })
+  } 
+
+
+
+  render() {  
+    console.log('rendering, this.state =', this.state)
+    var eventList;
+    if (this.state.events && this.state.events.length > 0) {
+      eventList = this.state.events.map((event) => {
+        return <Event key={event._id} event={event}/>
+      })
+    } else {
+      eventList= <div>loading</div>
+    }
+
+    console.log('eventList =', eventList)
+    
     return (
-      <div>
-        <h3>Event Name</h3>
-        <p>Date</p>
-        <p>Description</p>
-        <p>Location</p>
+      <div className="container">
+        <div>Events</div>
+         {eventList} 
       </div>
     );
-  }
-}
 
+    
+};
+}
 
 export default EventsData;
