@@ -5,7 +5,7 @@ import './NavBar.css';
 const NavBar = (props) => {
   let nav = props.user ?
     <div className="row">
-      <nav className="navbar navbar-dark bg-dark navbar-fixed-top navbar-inverse">
+      <nav className="navbar navbar-dark bg-dark navbar-fixed-top navbar-inverse nav-align-items">
         <div className="align-left col-md-3 text-center">
           <Link to="/">FoodFestFinder</Link>
         </div>
@@ -21,7 +21,7 @@ const NavBar = (props) => {
       </nav>
     </div>
     :
-      <nav className="navbar navbar-dark bg-dark navbar-fixed-top navbar-inverse">
+      <nav className="navbar navbar-dark bg-dark navbar-fixed-top navbar-inverse nav-align-items">
         <Link to="/events">EVENTS</Link>
         &nbsp;&nbsp;|&nbsp;&nbsp;
         <Link to="/login">LOG IN</Link>
