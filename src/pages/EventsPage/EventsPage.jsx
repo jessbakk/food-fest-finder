@@ -15,6 +15,7 @@ import EventsData from '../../components/EventsData/EventsData';
       <div className="container">
         <div className="row">
           <h1>Food Festivals</h1>
+          <Link to="/addevent"><span className="border">Add Event</span></Link>
           <EventsData />
         </div>
       </div>
