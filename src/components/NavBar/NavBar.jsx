@@ -27,7 +27,7 @@ const NavBar = (props) => {
     </div>;
 
   return (
-    <div className="container">
+    <div className="container nav-custom">
       {nav}
     </div>
   );

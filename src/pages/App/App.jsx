@@ -12,6 +12,7 @@ import userService from '../../utils/userService';
 import EventsPage from '../EventsPage/EventsPage';
 
 
+
 class App extends Component {
   constructor(props) {
     super(props);

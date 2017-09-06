@@ -3,11 +3,13 @@ import './Jumbotron.css';
 
 const Jumbotron = () => {
   return(
-    <div className="container">
-      <div className="jumbotron jumbotron-img">
-        <h1>FoodFestFinder</h1>
+    <div>
+      <div className="jumbotron-img">
         <div>
-        <p>Find the best Food Fests in your area</p>
+          <div>
+          <h1 className="jumbo-title">FoodFestFinder</h1>
+          <p className="p-jumbo">Find the best Food Fests in your area</p>
+          </div>
         </div>
       </div>
     </div>
