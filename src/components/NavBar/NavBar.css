@@ -1,8 +1,15 @@
 .NavBar-welcome {
-  color: black;
+  color: white;
+}
+
+a {
+  color: whitesmoke;
 }
 
 .nav-custom {
-    padding-top: 15px;
     padding-bottom: 45px;
+}
+
+.nav-align-items {
+    padding-top: 15px;  
 }
