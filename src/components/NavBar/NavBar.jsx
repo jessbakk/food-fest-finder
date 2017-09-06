@@ -22,11 +22,16 @@ const NavBar = (props) => {
     </div>
     :
       <nav className="navbar navbar-dark bg-dark navbar-fixed-top navbar-inverse nav-align-items">
-        <Link to="/events">EVENTS</Link>
-        &nbsp;&nbsp;|&nbsp;&nbsp;
-        <Link to="/login">LOG IN</Link>
-        &nbsp;&nbsp;|&nbsp;&nbsp;
-        <Link to="/signup">SIGN UP</Link>
+        <div className="align-left col-md-3 text-center">
+          <Link to="/">FoodFestFinder</Link>
+        </div>
+        <div className="align-right col-md-8 text-right">
+          <Link to="/events">EVENTS</Link>
+          &nbsp;&nbsp;|&nbsp;&nbsp;
+          <Link to="/login">LOG IN</Link>
+          &nbsp;&nbsp;|&nbsp;&nbsp;
+          <Link to="/signup">SIGN UP</Link>
+        </div>
       </nav>;
 
   return (
