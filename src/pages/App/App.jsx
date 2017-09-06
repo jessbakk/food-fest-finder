@@ -15,17 +15,11 @@ import EventsPage from '../EventsPage/EventsPage';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = Object.assign({})
-    this.getInitialState()
-  }
-
-  getInitialState() {
-    return {
-      events: []
-    }
+    this.state = {}
   }
 
   /*---------- Helper Methods ----------*/
+
 
 
   /*---------- Callback Methods ----------*/
@@ -42,6 +36,8 @@ class App extends Component {
   handleSignup = () => {
     this.setState({user: userService.getUser()});
   }
+
+
 
 
 
@@ -79,6 +75,7 @@ class App extends Component {
             <Route exact path='/events' render={() => 
             <EventsPage 
               user={this.state.user}
+              events={this.state.events}
             />
             }/>
           </Switch>
