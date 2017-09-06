@@ -6,6 +6,8 @@ const NavBar = (props) => {
   let nav = props.user ?
     <div>
       <nav className="navbar-right fixed-top">
+        <Link to="/events">EVENTS</Link>
+        &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
         <Link to="/" >HOME</Link>
         &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
         <Link to="" onClick={props.handleLogout} >LOG OUT</Link>
@@ -16,6 +18,8 @@ const NavBar = (props) => {
     :
     <div>
       <nav className="navbar-right fixed-top">
+        <Link to="/events">EVENTS</Link>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
         <Link to="/login">LOG IN</Link>
         &nbsp;&nbsp;|&nbsp;&nbsp;
         <Link to="/signup">SIGN UP</Link>

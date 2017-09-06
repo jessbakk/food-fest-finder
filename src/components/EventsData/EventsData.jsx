@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
+import Event from '../Event/Event';
 
 class EventsData extends Component {
   constructor(props) {
     super(props);
-    this.state={}
+    this.state={
+    }
   };
   
   componentDidMount = () => {
@@ -18,18 +20,34 @@ class EventsData extends Component {
       })
       .then(res => res.json())
       .then(events => {
-       this.setState({events})
+        console.log('got events from backend')
+        this.setState({events})
      })
   } 
 
 
 
   render() {  
+    console.log('rendering, this.state =', this.state)
+    var eventList;
+    if (this.state.events && this.state.events.length > 0) {
+      eventList = this.state.events.map((event) => {
+        return <Event key={event._id} event={event}/>
+      })
+    } else {
+      eventList= <div>loading</div>
+    }
+
+    console.log('eventList =', eventList)
+    
     return (
       <div className="container">
-        <p>data</p>
+        <div>Events</div>
+         {eventList} 
       </div>
     );
+
+    
 };
 }
 
