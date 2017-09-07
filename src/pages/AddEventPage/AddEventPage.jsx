@@ -4,7 +4,10 @@ import AddEventForm from '../../components/AddEventForm/AddEventForm';
 
 const AddEventPage = (prop) => {
   return (
-    <AddEventForm />
+    <div className="container">
+      <h1>Add Event</h1>
+      <AddEventForm />
+    </div>
   )
 }
 
