@@ -25,8 +25,6 @@ class EventsData extends Component {
      })
   } 
 
-
-
   render() {  
     console.log('rendering, this.state =', this.state)
     var eventList;
@@ -42,12 +40,11 @@ class EventsData extends Component {
     
     return (
       <div id="events-container">
-         {eventList} 
+        <h1>Events</h1>
+        {eventList} 
       </div>
     );
-
-    
-};
+  };
 }
 
 export default EventsData;
