@@ -1,6 +1,5 @@
 #map-container {
   position: fixed !important;
   width: 100vw;
-  height: 69vh;
-  display: flow-root;
+  height: 95vh;
 }
