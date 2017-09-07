@@ -5,11 +5,7 @@ import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 export class MapContainer extends Component {
   constructor(props) {
     super(props);
-    this.state= {
-      showingInfoWindow: false,
-      activeMarker: {},
-      selectedEvent: {}
-    }
+   
   }
 
   render() {
@@ -22,4 +18,4 @@ export class MapContainer extends Component {
   }
 }
 
-export default GoogleApiWrapper({ apiKey: process.env.GOOGLEKEY}) (MapContainer)
+export default GoogleApiWrapper({ apiKey: "AIzaSyDPhY5RPRnHCJqNcFBxKlQb7r0PdUmiXZI"}) (MapContainer)
