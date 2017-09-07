@@ -1,3 +1,7 @@
 .img-thumbnail {
   max-width: 50%;
 }
+
+.card {
+  max-width: 578px;
+}
