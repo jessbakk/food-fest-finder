@@ -1,0 +1,7 @@
+#events-container {
+  position: relative !important;
+  display: inline-block;
+  width: auto;
+  background: white;
+  margin-left: 2em;
+}

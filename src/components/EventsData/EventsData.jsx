@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Event from '../Event/Event';
+import './EventsData.css';
 
 class EventsData extends Component {
   constructor(props) {
@@ -40,7 +41,7 @@ class EventsData extends Component {
     console.log('eventList =', eventList)
     
     return (
-      <div className="container">
+      <div id="events-container">
          {eventList} 
       </div>
     );

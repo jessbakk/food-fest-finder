@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
+import './MapContainer.css';
 
 
 export class MapContainer extends Component {
@@ -10,10 +11,11 @@ export class MapContainer extends Component {
 
   render() {
     return (
-      <Map google={this.props.google} zoom={14}>
-      <Marker onClick={this.onMarkerClick} name={'Current Location'} />
-     
-    </Map>
+      <div id="map-container">
+        <Map google={this.props.google} zoom={14}>
+        <Marker onClick={this.onMarkerClick} name={'Current Location'} />
+        </Map>
+      </div>
     );
   }
 }

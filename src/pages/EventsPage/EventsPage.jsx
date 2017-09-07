@@ -14,6 +14,7 @@ import MapContainer from '../../components/MapContainer/MapContainer';
       handleLogout={props.handleLogout}
       />
       <MapContainer />
+      <EventsData />
     </div>
   );
 }
