@@ -37,11 +37,57 @@ export class MapContainer extends Component {
     return (
       <div id="map-container">
         <Map 
-          initialCenter={{lat: 34.0522, lng: -118.2437}}
-          google={this.props.google} zoom={12}>
+          initialCenter={{lat: 33.920572, lng: -118.303528}}
+          google={this.props.google} zoom={11}>
         <Marker 
           onClick={this.onMarkerClick} 
-          name={'Current Location'} 
+          name={'Alex\'s Lemonade Fundraiser'}
+          position={{lat: 34.072879, lng: -118.441136}}
+        />
+        <Marker 
+          onClick={this.onMarkerClick} 
+          name={'Terranea\'s Celebration of Food & Wine'}
+          position={{lat: 33.736812, lng: -118.397891}}
+        />
+        <Marker 
+          onClick={this.onMarkerClick} 
+          name={'Orange International Street Fair'}
+          position={{lat: 33.787650, lng: -117.852241}}
+        />
+        <Marker 
+          onClick={this.onMarkerClick} 
+          name={'Savor Santa Ana'}
+          position={{lat: 33.747949, lng: -117.867613}}
+        />
+        <Marker 
+          onClick={this.onMarkerClick} 
+          name={'The Bloody Mary Festival'}
+          position={{lat: 34.059562, lng: -118.345246}}
+        />
+        <Marker 
+          onClick={this.onMarkerClick} 
+          name={'Cocktails in the City'}
+          position={{lat: 34.044639, lng: -118.251799}}
+        />
+        <Marker 
+          onClick={this.onMarkerClick} 
+          name={'Battle of the Burger'}
+          position={{lat: 34.0563799, lng: -118.239724}}
+        />
+        <Marker 
+          onClick={this.onMarkerClick} 
+          name={'DECADENCE'}
+          position={{lat: 33.677995, lng: -117.840313}}
+        />
+        <Marker 
+          onClick={this.onMarkerClick} 
+          name={'Eat Uptown Food Festival'}
+          position={{lat: 33.980343, lng: -118.036466}}
+        />
+        <Marker 
+          onClick={this.onMarkerClick} 
+          name={'Los Angeles Donut Festival'}
+          position={{lat: 34.076859, lng: -118.288589}}
         />
         <InfoWindow
           marker={this.state.activeMarker}
