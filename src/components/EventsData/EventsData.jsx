@@ -14,13 +14,11 @@ class EventsData extends Component {
   }
 
   fetchEvents = () => {
-    console.log('fetching data EventsData.jsx');
       return fetch('/api/events/', {
         method: 'GET'
       })
       .then(res => res.json())
       .then(events => {
-        console.log('got events from backend')
         this.setState({events})
      })
   } 
