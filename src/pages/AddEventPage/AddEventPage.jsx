@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
+import AddEventForm from '../../components/AddEventForm/AddEventForm';
 
-const AddEventPage = () => {
+
+const AddEventPage = (prop) => {
   return (
-    <div>Add Event Page</div>
+    <AddEventForm />
   )
 }
 
-export default AddEventPage;
+  export default AddEventPage;

@@ -2,14 +2,15 @@ import React, { Component } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
-  Route
-  // Redirect
+  Route,
+  Redirect
 } from 'react-router-dom';
 import WelcomePage from '../WelcomePage/WelcomePage';
 import SignupPage from '../SignupPage/SignupPage';
 import LoginPage from '../LoginPage/LoginPage';
 import userService from '../../utils/userService';
 import EventsPage from '../EventsPage/EventsPage';
+import AddEventPage from '../AddEventPage/AddEventPage';
 
 
 
@@ -74,11 +75,18 @@ class App extends Component {
               />
             }/>
             <Route exact path='/events' render={() => 
-            <EventsPage 
+              <EventsPage 
               user={this.state.user}
               events={this.state.events}
             />
             }/>
+            <Route exact path='/addevent' render={() =>
+            (
+              userService.getUser() ? 
+              <AddEventPage />
+              :
+              <Redirect to='/login' />
+            )}/>
           </Switch>
         </Router>
         
