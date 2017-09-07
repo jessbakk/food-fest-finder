@@ -70,10 +70,6 @@ class AddEventForm extends Component {
         
         <input type="submit" value="Submit" />
 
-
-
-
-
         <Link to='/events'>Cancel</Link>
       </form>
     );
