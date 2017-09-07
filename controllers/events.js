@@ -7,6 +7,14 @@ function getAllEvents(req, res) {
   });
 }
 
+function addNewEvent(req, res) {
+  var event = new Event(req.body);
+  event.save( (err) => {
+    res.status(201).json(event)
+  });
+}
+
 module.exports = {
-  getAllEvents
+  getAllEvents,
+  addNewEvent
 }
