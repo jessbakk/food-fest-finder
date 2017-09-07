@@ -8,9 +8,9 @@ import {
 import WelcomePage from '../WelcomePage/WelcomePage';
 import SignupPage from '../SignupPage/SignupPage';
 import LoginPage from '../LoginPage/LoginPage';
-import userService from '../../utils/userService';
 import EventsPage from '../EventsPage/EventsPage';
 import AddEventPage from '../AddEventPage/AddEventPage';
+import userService from '../../utils/userService';
 
 
 
@@ -90,9 +90,6 @@ class App extends Component {
           </Switch>
         </Router>
         
-
-
-
       </div>
     )
   }
