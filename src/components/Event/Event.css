@@ -1,5 +1,6 @@
 .img-thumbnail {
-  max-width: 50%;
+  max-width: 80%;
+  margin-left: 52px;
 }
 
 .card {
