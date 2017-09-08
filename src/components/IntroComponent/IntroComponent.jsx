@@ -4,7 +4,7 @@ import './IntroComponent.css';
 const IntroComponent = () => {
   return (
     <div className="container">
-      <h1 className="row text-center">Find the BEST food FESTS in your area!</h1> 
+      <h1 className="row text-center intro">Find the BEST food FESTS in your area!</h1> 
         <div className="row">       
           <div className="col-6 col-md-4 text-center">
             <h3>What</h3>

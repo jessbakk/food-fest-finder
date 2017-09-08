@@ -6,7 +6,7 @@ const NavBar = (props) => {
   let nav = props.user ?
     <div className="row">
       <nav className="navbar navbar-fixed-top nav-align-items">
-        <div className="align-left col-md-3 text-center">
+        <div className="align-left col-md-3 text-center special-logo">
           <Link to="/">FoodFestFinder</Link>
         </div>
         <div className="align-right col-md-8 text-right">
@@ -22,7 +22,7 @@ const NavBar = (props) => {
     </div>
     :
       <nav className="navbar navbar-fixed-top nav-align-items">
-        <div className="align-left col-md-3 text-center">
+        <div className="align-left col-md-3 text-center special-logo">
           <Link to="/">FoodFestFinder</Link>
         </div>
         <div className="align-right col-md-8 text-right">

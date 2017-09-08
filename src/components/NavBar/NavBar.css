@@ -16,5 +16,9 @@ a {
 
 nav  {
   background-color:  white!important;
-
 } 
+
+.special-logo {
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-size: xx-large;
+}

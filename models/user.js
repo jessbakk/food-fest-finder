@@ -7,7 +7,8 @@ const SALT_ROUNDS = 6;
 var userSchema = new Schema({
   name: String,
   email: {type: String, required: true, lowercase: true, unique: true},
-  password: String
+  password: String,
+  admin: {type: Boolean, default: false}
 }, {
   timestamps: true
 });

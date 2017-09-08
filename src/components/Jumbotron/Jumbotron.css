@@ -6,6 +6,7 @@
   background-size: cover;
   color: black;
   display: flex;
+
 }
 
 .jumbo-title {
@@ -13,18 +14,19 @@
   background-color: rgba(255, 255, 255, 0.2);
   padding-top: 100px;
   margin-bottom: 0;
-  padding-left: 50px;
   margin-top: 0;
+  height: 80vh;;
+  padding-left: 550px;
   
 }
 
 .p-jumbo {
-  padding-bottom: 280px;
-  padding-top: 10px;
+  padding-top: 300px;
+  padding-bottom: 30px;
   background-color: rgba(255, 255, 255, 0.2);
-  padding-left: 50px;
   margin: 0 auto;
-  width: 100vw;
-
+  width: 136vw;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 90px;
 }
 

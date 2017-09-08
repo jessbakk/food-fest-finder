@@ -7,8 +7,7 @@ const Jumbotron = () => {
       <div className="jumbotron-img">
         <div>
           <div>
-          <h1 className="jumbo-title">FoodFestFinder</h1>
-          <p className="p-jumbo">Find the best Food Fests in your area</p>
+          <p className="p-jumbo text-center">...aw yeah!</p>
           </div>
         </div>
       </div>
