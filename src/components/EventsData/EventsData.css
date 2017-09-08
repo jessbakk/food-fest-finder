@@ -1,7 +1,18 @@
 #events-container {
-  position: relative !important;
+  position: relative;
   display: inline-block;
   width: auto;
-  background: white;
+  background: clear;
   margin-left: 2em;
 }
+
+#event-title {
+  background: red;
+  font-size: 60px;
+  display: flex;
+  margin: 22px;
+  padding-left: 15px;
+  box-shadow: 3px 3px 10px #888888;
+}
+
+
