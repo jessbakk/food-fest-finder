@@ -7,7 +7,8 @@
 }
 
 #event-title {
-  background: red;
+  background: rgba(234, 45, 10, 0.83);
+  color: white;
   font-size: 60px;
   display: flex;
   margin: 22px;
