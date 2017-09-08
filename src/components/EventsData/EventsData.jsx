@@ -37,10 +37,12 @@ class EventsData extends Component {
     console.log('eventList =', eventList)
     
     return (
+    <div>  
       <div id="events-container">
-        <h1>Events</h1>
+      <div id="event-title">Events</div>
         {eventList} 
       </div>
+    </div>
     );
   };
 }

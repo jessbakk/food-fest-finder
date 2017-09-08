@@ -5,3 +5,10 @@
 .card {
   max-width: 578px;
 }
+
+.card-styling {
+  background: ghostwhite;
+  margin: 22px;
+  padding: 15px;
+  box-shadow: 3px 3px 10px #888888;
+}
