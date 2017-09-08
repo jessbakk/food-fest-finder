@@ -41,11 +41,6 @@ export class MapContainer extends Component {
           google={this.props.google} zoom={10}>
         <Marker 
           onClick={this.onMarkerClick} 
-          name={'Alex\'s Lemonade Fundraiser'}
-          position={{lat: 34.072879, lng: -118.441136}}
-        />
-        <Marker 
-          onClick={this.onMarkerClick} 
           name={'Terranea\'s Celebration of Food & Wine'}
           position={{lat: 33.736812, lng: -118.397891}}
         />

@@ -8,6 +8,7 @@ const LoginPage = (props) => {
       <NavBar/>
       <br/>
       <br/>
+      <br/>
       <LoginForm
         {...props}
         handleLogin={props.handleLogin}
