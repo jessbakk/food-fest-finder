@@ -1,13 +1,13 @@
 #events-container {
   position: relative;
   display: inline-block;
-  width: auto;
+  width: 450px;;
   background: clear;
-  margin-left: 2em;
+  margin-left: 7em;
 }
 
 #event-title {
-  background: rgba(234, 45, 10, 0.83);
+  background: rgba(229, 21, 21, 0.83);
   color: white;
   font-size: 60px;
   display: flex;

@@ -1,5 +1,5 @@
 .jumbotron-img {
-  background-image: url('https://i.imgur.com/LTb6vhk.png');
+  background-image: url('https://static01.nyt.com/images/2017/08/09/dining/09DESSERT-slide-F6XI/09DESSERT-slide-F6XI-videoSixteenByNineJumbo1600.jpg');
   max-height: 100%;
   max-width: 100%;
   background-repeat: no-repeat;
@@ -9,7 +9,7 @@
 }
 
 .jumbo-title {
-  font-size: 90px;
+  font-size: 75px;
   background-color: rgba(255, 255, 255, 0.2);
   padding-top: 100px;
   margin-bottom: 0;

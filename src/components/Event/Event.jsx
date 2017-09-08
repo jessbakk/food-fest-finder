@@ -9,6 +9,7 @@ const Event = (props) => {
             <img className="card-img-top align-center" src={props.event.photos[0]} className="img-thumbnail" alt="" />
             <div className="card-block">
               <h3 className="card-text text-center">{props.event.name}</h3>
+              <br/>
               <p className="card-text text-center">{props.event.description}</p>
             </div>
           </div>

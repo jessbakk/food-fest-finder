@@ -39,7 +39,7 @@ class EventsData extends Component {
     return (
     <div>  
       <div id="events-container">
-      <div id="event-title">Events</div>
+      <div id="event-title">Food Fests</div>
         {eventList} 
       </div>
     </div>
