@@ -1,6 +1,7 @@
 import React from 'react';
 // import {Link} from 'react-router-dom';
 import NavBar from '../../components/NavBar/NavBar';
+import Footer from '../../components/Footer/Footer';
 import Jumbotron from '../../components/Jumbotron/Jumbotron';
 import IntroComponent from '../../components/IntroComponent/IntroComponent'
 
@@ -13,6 +14,7 @@ return (
     />
     <Jumbotron />
     <IntroComponent />
+    <Footer />
   </div>
   );
 }
