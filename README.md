@@ -53,7 +53,7 @@ With FoodFestFinder, any users (logged in or anonymous) can view events with eas
 
 ## Problems
 
-* **No Current "issues** - Time limitations did not allow for additional features that would have enhanced the users experience
+* **Current "issues** - Outdated Heroku stack, in process of updating to latest Heroku stack version
 
 ## Planned Enhancements/Features
 
